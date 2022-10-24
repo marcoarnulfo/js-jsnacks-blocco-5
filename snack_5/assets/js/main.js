@@ -10,67 +10,34 @@ compresa tra “a” e “b”
 
 */
 
-/*
-
-let test = []
-
-function fillArray(min, max, nuovoArray) {
-    let nuovoArray = []
-    for (let index = min +1; index < max; index++) {
-        nuovoArray.push(index)
-    }
-    return nuovoArray
-}
-
-fillArray(4, 10, test)
 
 
-console.log(test);
-
-*/
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
+let newArray = []
 
-
-
-
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-function fillArray(tuoArray, min, max ) {
-    let nuovoArray = tuoArray.map(function(element){
-        if (element < min) {
-            console.log('minore!!');
-        } 
-        if (element > max) {
-            console.log('maggiore!!');
+function myFunction(yourArray, min, max) {
+    yourArray.forEach((index) => {
+        //console.log(index);
+        if (index > min && index < max) {
+            newArray.push(index)
         }
-        return element
-    }) 
+    })
 }
 
-fillArray(arr, 3, 5)
-
-console.log(nuovoArray);
+myFunction(arr, 7, 10)
 
 
+console.log(newArray);
 
 /*
-
-let modifiedArr = arr.map(function(element){
-    if (element > 4) {
-        console.log('funziono');
-    } 
-    if (element < 4) {
-        console.log('funziono di nuovo');
+arr.forEach((index) => {
+    //console.log(index);
+    if (index > 3 && index < 7) {
+        console.log(index);
     }
-    return element 
-})
-
-console.log(modifiedArr);
-
-
+});
 */
-
-
 
 
