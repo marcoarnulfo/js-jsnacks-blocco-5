@@ -15,29 +15,18 @@ compresa tra “a” e “b”
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-let newArray = []
-
 function myFunction(yourArray, min, max) {
+    newArray = []
     yourArray.forEach((index) => {
-        //console.log(index);
         if (index > min && index < max) {
             newArray.push(index)
         }
-    })
+    }) 
+return newArray
 }
 
-myFunction(arr, 7, 10)
-
-
+myFunction(arr, 3, 8)
 console.log(newArray);
 
-/*
-arr.forEach((index) => {
-    //console.log(index);
-    if (index > 3 && index < 7) {
-        console.log(index);
-    }
-});
-*/
 
 
