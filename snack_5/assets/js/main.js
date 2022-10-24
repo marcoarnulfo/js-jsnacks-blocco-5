@@ -10,18 +10,67 @@ compresa tra “a” e “b”
 
 */
 
+/*
+
 let test = []
 
-function generateArray(min, max, mioArray) {
-    for (let index = min; index < max; index++) {
-        mioArray.push(index)
+function fillArray(min, max, nuovoArray) {
+    let nuovoArray = []
+    for (let index = min +1; index < max; index++) {
+        nuovoArray.push(index)
     }
+    return nuovoArray
 }
 
-generateArray(0, 10, test)
+fillArray(4, 10, test)
 
 
 console.log(test);
+
+*/
+
+
+
+
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+function fillArray(tuoArray, min, max ) {
+    let nuovoArray = tuoArray.map(function(element){
+        if (element < min) {
+            console.log('minore!!');
+        } 
+        if (element > max) {
+            console.log('maggiore!!');
+        }
+        return element
+    }) 
+}
+
+fillArray(arr, 3, 5)
+
+console.log(nuovoArray);
+
+
+
+/*
+
+let modifiedArr = arr.map(function(element){
+    if (element > 4) {
+        console.log('funziono');
+    } 
+    if (element < 4) {
+        console.log('funziono di nuovo');
+    }
+    return element 
+})
+
+console.log(modifiedArr);
+
+
+*/
+
 
 
 
